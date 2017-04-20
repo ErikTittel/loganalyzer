@@ -137,7 +137,7 @@ public class LogAnalyzer {
                     summary.append("|");
                     summary.append(error.lineNumbers.size());
                     summary.append("|");
-                    summary.append(error.lineNumbers.stream().limit(15).map(String::valueOf).sorted().collect(Collectors.joining(",")));
+                    summary.append(error.lineNumbers.stream().limit(15).sorted().map(String::valueOf).collect(Collectors.joining(",")));
                     summary.append("|");
                     summary.append(errorString);
                     summary.append("|");
